@@ -75,12 +75,7 @@ Initially, to test my answering machine, I used my telegram bot, whose work is w
 
 5. **Configure Service Parameters**:
     - In the opened NSSM window, configure the parameters:
-        - **Path**: `YOUR IDLE Directory`
-        - **Startup directory**: `Autonutor Directory`
-        - **Arguments**: `Autonutor.py`
-
-    In my case, I used Pycharm and all the manipulations with the installation of libraries and the same, I did in it. In your case, you need to do it:
-    - **Path**: `the path to the venv folder inside your PyCharm Project`
+        - **Path**: `YOUR venv directory and find pythonw.exe`
         - **Startup directory**: `Autonutor Directory`
         - **Arguments**: `Autonutor.py`
     
