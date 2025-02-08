@@ -7,7 +7,7 @@ An automatic auto-responder bot for Telegram that emulates your speaking style a
 1. **Clone the Repository**:
 
     ```bash
-    git clone https://github.com/YourGitHubUsername/Telegram-AutoResponder.git
+    git clone https://github.com/snusareFaff/Autonutor.git
     cd Telegram-AutoResponder
     ```
 
@@ -45,11 +45,11 @@ An automatic auto-responder bot for Telegram that emulates your speaking style a
         python generate_session.py
         ```
 
-    - Copy the generated session string and replace `YOUR_SESSION_STRING` in `main.py`.
+    - Copy the generated session string and replace `YOUR_SESSION_STRING` in `Autonutor.py`.
 
 6. **Replace Sensitive Data**:
-    - Replace `YOUR_TELEGRAM_BOT_TOKEN` in `main.py` with your actual bot token.
-    - Replace `YOUR_USER_ID` in `main.py` with your actual user ID.
+    - Replace `YOUR_TELEGRAM_BOT_TOKEN` in `Autonutor.py` with your actual bot token.
+    - Replace `YOUR_USER_ID` in `Autonutor.py` with your actual user ID.
 
 ## Setting Up the Service on Windows Using NSSM
 
@@ -71,19 +71,22 @@ An automatic auto-responder bot for Telegram that emulates your speaking style a
 
 5. **Configure Service Parameters**:
     - In the opened NSSM window, configure the parameters:
-        - **Path**: `C:\Users\Ryzen\Desktop\Питончики\Telegram-AutoResponder\venv\Scripts\pythonw.exe`
-        - **Startup directory**: `C:\Users\Ryzen\Desktop\Питончики\Telegram-AutoResponder`
-        - **Arguments**: `main.py`
+        - **Path**: `YOUR IDLE Directory`
+        - **Startup directory**: `Autonutor Directory`
+        - **Arguments**: `Autonutor.py`
 
-    ![NSSM Setup](https://i.imgur.com/8zL2QZp.png)
-
-6. **Start the Service**:
+    In my case, I used Pycharm and all the manipulations with the installation of libraries and the same, I did in it. In your case, you need to do it:
+    - **Path**: `the path to the venv folder inside your PyCharm Project`
+        - **Startup directory**: `Autonutor Directory`
+        - **Arguments**: `Autonutor.py`
+    
+7. **Start the Service**:
 
     ```bash
     .\nssm start TelegramAutoResponder
     ```
 
-7. **Check Service Status**:
+8. **Check Service Status**:
 
     ```bash
     .\nssm status TelegramAutoResponder
@@ -100,13 +103,13 @@ An automatic auto-responder bot for Telegram that emulates your speaking style a
 2. **Create a New Service**:
 
     ```bash
-    .\nssm install TelegramAutoResponder C:\Users\Ryzen\Desktop\Питончики\Telegram-AutoResponder\venv\Scripts\pythonw.exe C:\Users\Ryzen\Desktop\Питончики\Telegram-AutoResponder\main.py
+    .\nssm install TelegramAutoResponder 
     ```
 
 3. **Configure Service Parameters**:
 
     ```bash
-    .\nssm set TelegramAutoResponder AppDirectory C:\Users\Ryzen\Desktop\Питончики\Telegram-AutoResponder
+    .\nssm set TelegramAutoResponder AppDirectory C:\
     .\nssm set TelegramAutoResponder AppExit Default Restart
     .\nssm set TelegramAutoResponder DisplayName "Telegram AutoResponder"
     .\nssm set TelegramAutoResponder ObjectName LocalSystem
@@ -147,7 +150,7 @@ To run the script manually, follow these steps:
 2. **Run the Script**:
 
     ```bash
-    python main.py
+    python Autonutor.py
     ```
 
 ## Telegram Terms of Service
@@ -169,3 +172,5 @@ To run the script manually, follow these steps:
 
 ```bash
 pip install tgcrypto
+
+
