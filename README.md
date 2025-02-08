@@ -2,6 +2,10 @@
 
 An automatic auto-responder bot for Telegram that emulates your speaking style and responds as if from your account.
 
+## Note
+
+Initially, to test my answering machine, I used my telegram bot, whose work is written in the same code, so do not be surprised if you see lines of code responsible for the work of the BOT, since this code is written for both the answering machine and the bot, which performs the same functions as the answering machine.
+
 ## Installation
 
 1. **Clone the Repository**:
