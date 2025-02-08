@@ -1,0 +1,4 @@
+python-telegram-bot
+g4f
+pyrogram
+tgcrypto
